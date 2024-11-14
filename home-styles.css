@@ -70,6 +70,10 @@ p{
 	line-height: 15px;
 }
 
+a:hover{
+	font-size: 20px;
+}
+
 button{
 	width: 180px;
 	color: #000;
