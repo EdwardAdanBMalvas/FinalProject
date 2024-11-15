@@ -49,13 +49,13 @@ nav ul li a{
 	font-size: 13px;
 }
 
-.row{
+section{
 	display: flex;
 	height: 88%;
 	align-items: center;
 }
 
-.col{
+article{
 	flex-basis: 50%;
 }
 
@@ -64,14 +64,10 @@ h1{
 	font-size: 100px;
 }
 
-p{
+footer, p{
 	color: #fff;
 	font-size: 11px;
 	line-height: 15px;
-}
-
-a:hover{
-	font-size: 20px;
 }
 
 button{
@@ -116,6 +112,10 @@ button{
 
 .card:hover{
 	transform: translateY(-10px);
+}
+
+a:hover{
+	font-size: 20px;
 }
 
 h5{
