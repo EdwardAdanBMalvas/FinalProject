@@ -93,7 +93,9 @@ button{
 	margin: 10px 15px;
 	background-position: center;
 	background-size: cover;
-	transition: tranform 0.5s;
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
 }
 
 .card1{
