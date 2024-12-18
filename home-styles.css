@@ -21,11 +21,17 @@
 	align-items: center;
 }
 
-.logo{
-	width:50px;
-	cursor: pointer;
+.sprite {
+	background: url('images/sprite.png') no-repeat -98px -530px;
+	width: 140px;
+	height: 178px;
+	animation: varName 1s steps(2) infinite;
 }
 
+@keyframes varName{
+from{background-position-x:-93px;}
+to{background-position-x:-310px;}
+}
 .icon{
 	width: 30px;
 	cursor: pointer;
@@ -93,23 +99,25 @@ button{
 	margin: 10px 15px;
 	background-position: center;
 	background-size: cover;
-	transition-property: transform;
-	transition-duration: 1s;
-	transition-timing-function: ease-out;
+	transition: tranform 0.5s;
 }
 
 .card1{
 	background-image: url(images/innovations.jpg);
+	#contentClip { background-clip: content-box; }
 }
 
 .card2{
 	background-image: url(images/scams.png);
+	#contentClip { background-clip: content-box; }
 }
 .card3{
 	background-image: url(images/job-impact.jpg);
+	#contentClip { background-clip: content-box; }
 }
 .card4{
 	background-image: url(images/availability.jpg);
+	#contentClip { background-clip: content-box; }
 }
 
 .card:hover{
@@ -125,6 +133,12 @@ h5{
 	text-shadow: 0 0 5px #999;
 }
 
-.card p{
-	text-shadow: 0 0 15px #999;
+img[src^="images/"] {
+border: 2px solid blue;
 }
+
+li:nth-child(2) {
+font-weight: bold;
+}
+
+
