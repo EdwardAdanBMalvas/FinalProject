@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, inital-scale=1.0">
+	<title>QUIZ</title>
+	<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+ <div class="container">
+        <h1>Comprehension Check</h1> 
+            <div class="question" id="question-1">
+                <p>1. What does the website cover?</p>
+                <label><input type="radio" name="q1" value="A"> A) Poverty</label>
+                <label><input type="radio" name="q1" value="B"> B) Technology</label>
+                <label><input type="radio" name="q1" value="C"> C) Hunger</label>
+                <label><input type="radio" name="q1" value="D"> D) Climate Change</label>
+                <div class="button-container">
+                    <button onclick="Answer(1)">Submit</button>
+                    <button onclick="next()">Next</button>
+                </div> 
+            </div>
+            <div class="question" id="question-2">
+                <p>2. According to the Inventions page, what motivates people to invent?</p>
+                <label><input type="radio" name="q2" value="A"> A) Automation</label>
+                <label><input type="radio" name="q2" value="B"> B) Collaborations</label>
+                <label><input type="radio" name="q2" value="C"> C) Access to Information</label>
+                <label><input type="radio" name="q2" value="D"> D) Revenue</label>
+                <div class="button-container">
+                    <button onclick="Answer(2)">Submit</button>
+                    <button onclick="next()">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question-3">
+                <p>3. What page talks about the use of technology to fool others for their own interests?</p>
+                <label><input type="radio" name="q3" value="A"> A) Scams</label>
+                <label><input type="radio" name="q3" value="B"> B) Job Impact</label>
+                <label><input type="radio" name="q3" value="C"> C) Innovation</label>
+                <label><input type="radio" name="q3" value="D"> D) Availability</label>
+                <div class="button-container">
+                    <button onclick="Answer(3)">Submit</button>
+                    <button onclick="next()">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question-4">
+                <p>4. How many topics will this website cover?</p>
+                <label><input type="radio" name="q4" value="A"> A) 5</label>
+                <label><input type="radio" name="q4" value="B"> B) 3</label>
+                <label><input type="radio" name="q4" value="C"> C) 4</label>
+                <label><input type="radio" name="q4" value="D"> D) 6</label>
+                <div class="button-container">
+                    <button onclick="Answer(4)">Submit</button>
+                    <button onclick="next()">Next</button>
+                </div>
+            </div>
+            <div class="question" id="question-5">
+                <p>5. Which topic will talk about the accessibility of technology to every?</p>
+                <label><input type="radio" name="q5" value="A"> A) Innovation</label>
+                <label><input type="radio" name="q5" value="B"> B) Job Impact</label>
+                <label><input type="radio" name="q5" value="C"> C) Scams</label>
+                <label><input type="radio" name="q5" value="D"> D) Availability</label>
+                <div class="button-container">
+                    <button onclick="Answer(5)">Submit</button>
+                    <button onclick="displayResults()">Finish</button>
+                </div>
+            </div>
+        <div id="again">
+            <p id="result-message"></p>
+            <button onclick="again()">Try Again</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
