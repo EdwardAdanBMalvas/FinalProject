@@ -27,7 +27,6 @@
 	height: 178px;
 	animation: varName 1s steps(2) infinite;
 }
-
 @keyframes varName{
 from{background-position-x:-93px;}
 to{background-position-x:-310px;}
