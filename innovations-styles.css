@@ -23,9 +23,15 @@ article{
 	align-items: center;
 }
 
-.logo{
-	width:50px;
-	cursor: pointer;
+.sprite {
+	background: url('images/sprite.png') no-repeat -98px -530px;
+	width: 140px;
+	height: 178px;
+	animation: varName 1s steps(2) infinite;
+}
+@keyframes varName{
+from{background-position-x:-93px;}
+to{background-position-x:-310px;}
 }
 
 .icon{
